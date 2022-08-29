@@ -42,7 +42,7 @@ if (mysqli_connect_errno()) {
 
 <body>
     <!-- Header -->
-    <div class="header" id="lendau">
+    <div class="header" id="lendau len dau">
         <div class="header_top">
             <ul class="header_top_left_left">
                 <li class="hotro"><a href="trangchu.php">trang chủ</a></li>
