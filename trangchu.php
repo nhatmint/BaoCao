@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -182,82 +183,42 @@
                     <a href="">Xem thêm</a>
                 </div>
             </div>
-            <div class="body_middle_three_bottom">
-                <div class="one">
-                    <img src="./imge/son_1_main.webp" alt="" class="son_1_main">
-                    <img src="./imge/son_1_1_main.jpg" alt="" class="son_1_1_main">
-                    <div class="report">
-                        <div class="star">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+            <?php
+            $mylist = ['./imge/son_1_main.webp','./imge/son_2_main.webp','./imge/son_3_main.webp','./imge/son_4_main.webp'];
+            $mylist_hover = ['./imge/son_1_1_main.jpg','./imge/son_2_1_main.webp','./imge/son_3_1_main.webp','./imge/son_4_1_main.webp'];
+            $leng = count($mylist);
+            ?>   
+            <div style = "display: flex !important;">
+            <?php
+            for($i=0;$i<$leng;$i++){
+            ?>
+                <div class="body_middle_three_bottom" style = "display: float !important; margin-top:25px; margin-left:35px;margin-bottom: 100px;">
+                    <div class="one" >
+                       <img src="<?php echo $mylist[$i] ?>" alt="" class="son_1_main"  >
+                       <img src="<?php echo $mylist_hover[$i] ?>" alt="" class="son_1_1_main"> 
+                       <div class="report">
+                           <div class="star">
+                                <?php
+                                for($u=0;$u<5;$u++){
+                                ?>
+                                    <i class="fa fa-star"></i>
+                                <?php
+                                }
+                                ?>
+                            </div>
+                            <div class="heart">
+                                <button id="heart_btn"> <i class="fa fa-heart"></i> </button>
+                            </div>
                         </div>
-                        <div class="heart">
-                            <button id="heart_btn"> <i class="fa fa-heart"></i> </button>
-                        </div>
+                        <a href="chitietsanpham.php" target="_blank">Black Rouge Mara Hot Water Tint</a>
+                        <span>298,000đ</span>
                     </div>
-                    <a href="chitietsanpham.php" target="_blank">Black Rouge Mara Hot Water Tint</a>
-                    <span>298,000đ</span>
                 </div>
-                <div class="one">
-                    <img src="./imge/son_2_main.webp" alt="" class="son_1_main">
-                    <img src="./imge/son_2_1_main.webp" alt="" class="son_1_1_main">
-                    <div class="report">
-                        <div class="star">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <div class="heart">
-                            <button id="heart_btn"> <i class="fa fa-heart"></i> </button>
-                        </div>
-                    </div>
-                    <a href="chitietsanpham.php" target="_blank">Black Rouge Airfit Velvet Tint Ver 8</a>
-                    <span>298,000đ</span>
-                </div>
-                <div class="one">
-                    <img src="./imge/son_3_main.webp" alt="" class="son_1_main">
-                    <img src="./imge/son_3_1_main.webp" alt="" class="son_1_1_main">
-                    <div class="report">
-                        <div class="star">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <div class="heart">
-                            <button id="heart_btn"> <i class="fa fa-heart"></i> </button>
-                        </div>
-                    </div>
-                    <a href="chitietsanpham.php" target="_blank">Black Rouge Half N Half Water Glow Season 2</a>
-                    <span>298,000đ</span>
-                </div>
-                <div class="one">
-                    <img src="./imge/son_4_main.webp" alt="" class="son_1_main">
-                    <img src="./imge/son_4_1_main.webp" alt="" class="son_1_1_main">
-                    <div class="report">
-                        <div class="star">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                        </div>
-                        <div class="heart">
-                            <button id="heart_btn"> <i class="fa fa-heart"></i> </button>
-                        </div>
-                    </div>
-                    <a href="chitietsanpham.php" target="_blank">Black Rouge Drop Eye Stick Glitz</a>
-                    <span>318,000đ</span>
-                </div>
-
-
-            </div>
+           
+            <?php
+            }
+            ?>
+             </div>
         </div>
         <!-- End body_middle_3 -->
         <!-- Body_middle_4 -->
@@ -278,8 +239,46 @@
                     <a href="">Xem Thêm</a>
                 </div>
             </div>
-            <div class="body_middle_five_bottom">
-                <div class="two">
+            <!-- <?php
+            $mylist_two = ['./imge/3.PNG','./imge/4.webp','./imge/son_3_main.webp','./imge/son_4_main.webp'];
+            $mylist_hover_two = ['./imge/1.PNG','./imge/4.webp','./imge/son_3_1_main.webp','./imge/son_4_1_main.webp'];
+            $leng = count($mylist_two);
+            ?>   
+            <div style = "display: flex !important;">
+            <?php
+            for($i=0;$i<$leng;$i++){
+            ?>
+                <div class="body_middle_five_bottom" style = "display: float !important; margin-top:50px; width: 150px; margin-left:29px; margin-bottom:20px;">
+                    <div class="two" >
+                       <img src="<?php echo $mylist[$i] ?>" alt="" class="son_1_main"  >
+                       <img src="<?php echo $mylist_hover[$i] ?>" alt="" class="son_1_1_main"> 
+                       <div class="bay">
+                        <span>Sắp ra mắt</span>
+                       </div>
+                       <div class="report">
+                           <div class="star">
+                                <?php
+                                // for($u=0;$u<5;$u++){
+                                // ?>
+                                //     <i class="fa fa-star"></i>
+                                // <?php
+                                // }
+                                ?>
+                            </div>
+                            <div class="heart">
+                                <button id="heart_btn"> <i class="fa fa-heart"></i> </button>
+                            </div>
+                        </div>
+                        <a href="chitietsanpham.php" target="_blank">Black Rouge Drop Eye Stick Glitz</a>
+                        <span class="new">Sắp ra mắt</span>
+                    </div>
+                </div>
+           
+            <?php
+            }
+            ?>
+             </div> -->
+                <!-- <div class="two">
                     <img src="./imge/3.PNG" alt="" class="son_2_main">
                     <img src="./imge/1.PNG" alt="" class="son_2_1_main">
                     <div class="bay">
@@ -299,8 +298,8 @@
                     </div>
                     <a href="chitietsanpham.php" target="_blank">Black Rouge Drop Eye Stick Glitz</a>
                     <span class="new">Sắp ra mắt</span>
-                </div>
-                <div class="two">
+                </div> -->
+                <!-- <div class="two">
                     <img src="./imge/4.webp" alt="" class="son_2_main">
                     <img src="./imge/4.webp" alt="" class="son_2_1_main">
 
@@ -321,8 +320,8 @@
                     </div>
                     <a href="chitietsanpham.php" target="_blank">Black Rouge Drop Eye Stick Glitz</a>
                     <span class="new">Sắp ra mắt</span>
-                </div>
-                <div class="two">
+                </div> -->
+                <!-- <div class="two">
                     <img src="./imge/6.webp" alt="" class="son_2_main">
                     <img src="./imge/7.webp" alt="" class="son_2_1_main">
 
@@ -346,8 +345,8 @@
                     <div class="bay_three">
                         <span class="persen">-10%</span>
                     </div>
-                </div>
-                <div class="two">
+                </div> -->
+                <!-- <div class="two">
                     <img src="./imge/8.webp" alt="" class="son_2_main">
                     <img src="./imge/9.webp" alt="" class="son_2_1_main">
                     <div class="report">
@@ -370,8 +369,8 @@
                     <div class="bay_three">
                         <span class="persen">-10%</span>
                     </div>
-                </div>
-                <div class="two">
+                </div> -->
+                <!-- <div class="two">
                     <img src="./imge/son_3_main.webp" alt="" class="son_2_main">
                     <img src="./imge/son_3_1_main.webp" alt="" class="son_2_1_main">
                     <div class="report">
@@ -394,7 +393,7 @@
                     <div class="bay_three">
                         <span class="persen">-10%</span>
                     </div>
-                </div>
+                </div> -->
             </div>
 
         </div>
