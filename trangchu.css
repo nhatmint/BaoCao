@@ -415,7 +415,9 @@ body {
     display: flex;
     margin: auto;
     margin-bottom: 70px;
-
+    margin-top:25px; 
+    margin-left: 100px;
+    margin-right: 0px;
 }
 
 .one {
@@ -543,7 +545,7 @@ body {
     height: 30px;
     line-height: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .body_middle_five_top_left a {
@@ -574,19 +576,21 @@ body {
 
 .body_middle_five_bottom {
     width: 1265px;
-    height: 370px;
+    height: 300px;
     display: flex;
+    margin-left: 0px;
+
 }
 
 .two {
     width: 240px;
-    height: 330px;
+    height: 320px;
     position: relative;
     background-color: var(--color4);
-    margin-top: 30px;
-    margin-left: 10px;
+    margin-top: 20px;
     border: 1px solid var(--color7);
     box-shadow: 2px 2px var(--color7);
+    margin-left: 0px;
 }
 
 .two .new {
@@ -790,6 +794,11 @@ body {
 .body_middle_seven_bottom {
     width: 1265px;
     height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.to{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
