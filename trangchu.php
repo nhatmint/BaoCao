@@ -255,7 +255,7 @@
                        <div class="bay">
                         <span>Sắp ra mắt</span>
                        </div>
-                       <div class="report">
+                       <div class="report"> 
                            <div class="star">
                                 <?php
                                 for($u=0;$u<5;$u++){
@@ -332,10 +332,17 @@
         <!-- End_body_middle_7 -->
         <!-- body_middle_eight -->
         <div class="body_middle_eight">
-            <img src="./imge/anh_body_8_1.webp" alt="">
-            <img src="./imge/anh_body_8_2.webp" alt="">
-            <img src="./imge/anh_body_8_3.webp" alt="">
-            <img src="./imge/anh_body_8_4.webp" alt="">
+            <?php
+            $myimg = ['./imge/anh_body_8_1.webp','./imge/anh_body_8_2.webp','./imge/anh_body_8_3.webp','./imge/anh_body_8_4.webp'];
+            $lenm = count($myimg);
+            ?>
+             <?php
+            for($i=0;$i<$lenm;$i++){
+            ?>
+            <img src="<?php echo $myimg[$i] ?>" alt="">
+            <?php
+            }
+            ?>
         </div>
         <!--End body_middle_eight -->
         <!-- Body_midlle_nine -->
