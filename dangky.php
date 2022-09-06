@@ -184,7 +184,7 @@ if (mysqli_connect_errno()) {
                 </div>
                 <div class="form_group">
                     <label for="login-date">Ngày sinh*</label>
-                    <input type="text" class="duet-date__input" placeholder="Ngày/Tháng/Năm" id="xbirthday"
+                    <input type="text" class="duet-date__input" placeholder="Năm/Tháng/Ngày" id="xbirthday"
                         aria-autocomplete="none" autocomplete="off" name ="ngaysinh">
                 </div>
                 <div class="form_group_gt">
